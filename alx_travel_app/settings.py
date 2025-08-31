@@ -123,5 +123,15 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # alx_travel_app celery broker 
 CELERY_BROKER_URL = 'amqp://localhost' 
-CELERY_RESULT_BACKEND = 'rpc://' 
+CELERY_RESULT_BACKEND = 'rpc://'
+
+# SMTP Email backend setup
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = 'hammad.ibrahim21994@gmail.com '
+EMAIL_HOST_PASSWORD = 'Scylllllalalxlxl'
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
 
